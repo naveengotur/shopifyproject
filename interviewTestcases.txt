@@ -1,0 +1,198 @@
+Our Shopify Storefront URL is:
+🔗 https://1gmwvn-4u.myshopify.com/
+
+The Shopify Admin Panel can be accessed at:
+🔗 https://admin.shopify.com/store/1gmwvn-4u/themes?appLoadId=c8f0bb60-07b1-4b10-a30d-30421637278f
+
+To manage installed Apps, go to:
+🔗 https://admin.shopify.com/store/1gmwvn-4u/apps/shopify-forms
+
+To view or manage Products, use this link:
+🔗 https://admin.shopify.com/store/1gmwvn-4u/products?selectedView=all
+
+To configure or create Discounts, visit:
+🔗 https://admin.shopify.com/store/1gmwvn-4u/discounts
+
+To access and manage the Store Theme, use:
+🔗 https://admin.shopify.com/store/1gmwvn-4u/themes?appLoadId=10e17a37-a812-40f8-927f-d38dd6b2d06d
+
+The Theme Password for previewing the store is:
+🔐 Test@1234
+
+
+
+Manual Test Case ->
+Test Case 1: Signup on Shopify
+Field	Description
+Test Case ID	TC_001
+Title	Verify user can sign up on Shopify using email
+Preconditions	User is logged out from any active Shopify session
+Test Steps	
+1. Navigate to https://www.shopify.com/in/logout?dest=default
+2. Click on Start free trial
+3. Click Sign up with email
+4. Enter email: naveen94.gotur@gmail.com
+5. Enter password: Test@1234
+6. Click Create Shopify account
+7. Enter password again (if prompted)
+8. Click Log in
+9. Navigate to https://accounts.shopify.com/select?...
+10. Enter email & password again and log in
+11. Click on user profile
+12. Click All stores
+13. Select the desired store and go to Online Store
+14. Navigate to theme customization
+15. Click Customize Spotlight
+16. Exit customization
+17. Click More theme actions
+18. Preview the theme (opens in new tab)
+Expected Result	User should be signed up successfully and able to preview the Shopify store
+Actual Result	(To be filled after test execution)
+Status	(Pass/Fail)
+Attachments	Screenshots saved during execution
+
+Test Case 2: Login to Shopify
+Field	Description
+Test Case ID	TC_002
+Title	Verify existing user can log in to Shopify
+Preconditions	User has a valid Shopify account
+Test Steps	
+1. Navigate to https://www.shopify.com/in/logout
+2. Click on Log in
+3. Enter email: naveen94.gotur@gmail.com
+4. Click Continue with email
+5. Enter password: Test@1234
+6. Click Log in
+7. Navigate to profile/store dashboard
+8. Click on user profile
+9. Access homepage or store from dashboard
+Expected Result	User should successfully log into Shopify and land on store dashboard
+Actual Result	(To be filled after test execution)
+Status	(Pass/Fail)
+Attachments	N/A
+
+Test Case 3: Add New Product on Shopify
+Field	Description
+Test Case ID	TC_003
+Title	Verify user can create a new product
+Preconditions	User is logged into the Shopify Admin dashboard
+Test Steps	1. Navigate to https://admin.shopify.com/store/ugvvnh-vv?country=IN
+2. Click Products
+3. Click Add product
+4. Fill Title as "Pen"
+5. Enter description as "Test"
+6. Upload product image image1.jpg
+7. Enter Price as ₹350
+8. Enter Cost per item as ₹250
+9. Set Quantity as 24
+10. Enter SKU as "145214"
+11. Set Weight as 25 grams
+12. Click Add options like size or color
+13. Add Ink color options: Blue, Black
+14. Upload image for Blue variant
+15. Click Save
+Expected Result	New product titled "Pen" should be successfully created with all entered data and variants
+Actual Result	(To be filled after test execution)
+Status	(Pass/Fail)
+Attachments	Screenshot or link to the newly created product (optional)
+
+Test Case 4: Create New Collection on Shopify
+Field	Description
+Test Case ID	TC_004
+Title	Verify user can create a new collection
+Preconditions	User is logged into the Shopify Admin dashboard
+Test Steps	1. Navigate to https://admin.shopify.com/store/ugvvnh-vv?country=IN
+2. Click Collections
+3. Click Create collection
+4. Fill Title as "pen"
+5. Fill Description as "Test"
+6. Choose Automated Collection type
+7. Set Condition: Product tag is equal to test
+8. Click Save
+Expected Result	New collection titled "pen" should be created and condition should be applied successfully
+Actual Result	(To be filled after test execution)
+Status	(Pass/Fail)
+Attachments	(Optional - screenshot of created collection)
+
+ Test Case 3: Create a Gift Card Product
+Test Case ID: TC_GIFTCARD_001
+Title: Verify creation of a gift card product
+Module: Gift Cards
+Preconditions: User must be logged in to Shopify Admin panel
+Test Steps:
+1.Navigate to Shopify Admin homepage
+2.Click on Gift Cards in the sidebar
+3.Click Add gift card product
+4.Enter title as GiftCard
+5.Fill in product description with "Test"
+6.Upload gift card image (download.jpeg)
+7.Click Save
+Expected Result:
+Gift card product with the name "GiftCard" is created successfully.
+
+Test Case 4: Create a Product Discount for Collection
+Test Case ID: TC_DISCOUNT_001
+Title: Create a product discount for the 'pen' collection
+Module: Discounts
+Preconditions: At least one collection named "pen" exists
+Test Steps:
+1.Navigate to Discounts from sidebar
+2.Click Create discount
+3.Select Product Discount
+4.Enter discount code as SAVE10
+5.Set Percentage Discount to 10%
+6.Click Browse Collections and select the pen collection
+7.Click Add and then Save
+Expected Result:
+Discount named "SAVE10" is created and applied to the pen collection.
+
+Test Case 4: Install and Configure "Search & Discovery" App
+Test Case ID: TC_APP_001
+Title: Install Search & Discovery app and configure product filters
+Module: Apps
+Preconditions: User is logged into Shopify Admin
+Test Steps:
+1.Navigate to Apps → All recommended apps
+2.Select and click on Shopify Search & Discovery
+3.Install the app
+4.In the app's interface, go to Customize Filters
+5.Edit Availability filter and rename to "Availability1"
+6.Edit Price filter and rename to "100"
+7.Click View to preview the store (in a popup)
+8.Subscribe using email: naveen94.gotur@gmail.com
+9.Complete hCaptcha challenge
+10.Go back to the app and click on Settings
+11.Under Product Recommendations:
+12.Select GiftCard and Pen for recommendation
+13.Click Add Recommendations
+14.Search and add the same products
+15.Click Save
+16.Log out from Shopify Admin
+
+Expected Result:
+"Search & Discovery" app is installed, filters are configured, and product recommendations are set successfully.
+
+
+Bug Report
+1.Inconsistent Behavior During Signup:
+When clicking the “Start your free trial” button during signup, the application sometimes unexpectedly prompts for additional information before showing the "Start your free trial" popup.
+
+2.Login Flow Issue:
+After entering login credentials, users are sometimes redirected to an information form before being taken to the “Choose a Plan” page. This disrupts the expected login flow.
+
+3.Login Unreliability:
+Users are experiencing difficulty logging in to the application. The login process is inconsistent and not user-friendly.
+
+4.Automation Login Challenges:
+Manual login works as expected, but logging in through automation scripts proves to be difficult due to unpredictable redirects and prompts.
+
+5.Homepage Not Loading After Login:
+Even after entering valid login credentials, the homepage does not load. Instead, the user is stuck on a page that only displays a URL match notification without progressing further.
+
+Automation Report Note
+Sign-Up Test Scripts:
+1.If the login fails due to an unexpected prompt before the “Start your free trial” popup, execute the login1 test script.
+2.If the login redirects to an information form and then shows the “Choose a Plan” page, run the login2 test script.
+
+Login Test Script:
+1.If the signup flow fails completely, skip directly to the login process by executing the login3 test script.
