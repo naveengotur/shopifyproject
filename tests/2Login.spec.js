@@ -10,7 +10,7 @@ test('Login_page', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Email' }).fill('naveen94.gotur@gmail.com');
   await page.getByRole('button', { name: 'Continue with email' }).click();
   await page.getByRole('textbox', { name: 'Password' }).fill('Test@1234');
- 
+  await page.waitForTimeout(500);
   await page.getByRole('button', { name: 'Log in' }).click();
   await page.waitForTimeout(2000);
   // Profile page displayed
